@@ -10,14 +10,19 @@ import org.springframework.web.bind.annotation.RestController;
 @Controller
 public class MainController {
 
-//    @RequestMapping(value = "/", method = RequestMethod.GET)
-//    public String index() {
-//        return "index.html";
-//    }
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String index() {
+        return "index.html";
+    }
 ////
-//    @RequestMapping(value = "/anotherIndex", method = RequestMethod.GET)
-//    public String about() {
-//        return "about.html";
-//    }
+    @RequestMapping(value = "/about", method = RequestMethod.GET)
+    public String about() {
+        return "about.html";
+    }
+
+    @RequestMapping(value = "/contact", method = RequestMethod.GET)
+    public String contact() {
+        return "contact.html";
+    }
 
 }
